@@ -117,59 +117,39 @@
                 <h3>Enviar postal</h3>
                 <p>Envía una postal a un amigo o familiar para enseñarles lo bonito que es Mallorca
                 </p>
-                
-                <form name="sentMessage" class="well" id="contactForm"  novalidate>
-	       <legend>Selecciona imagen</legend>
-	       	<div class="row">
-			  <div class="col-xs-6 col-md-3">
-				<a href="#" class="thumbnail">
-				  <img src="../web/img/Pool_635687663766098867.jpg" alt="...">
-				</a>
-			  </div>
-			  <div class="col-xs-6 col-md-3">
-				<a href="#" class="thumbnail">
-				  <img src="../web/img/Exterior_635687663789379670.jpg" alt="...">
-				</a>
-			  </div>
-			  <div class="col-xs-6 col-md-3">
-				<a href="#" class="thumbnail">
-				  <img src="../web/img/slide_1.jpg" alt="...">
-				</a>
-			  </div>
-			  <div class="col-xs-6 col-md-3">
-				<a href="#" class="thumbnail">
-				  <img src="../web/img/pD0PRqGV.jpg" alt="...">
-				</a>
-			  </div>
-			</div>
-		 	<div class="control-group">
-                    <div class="controls">
-						<input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Introduzca tu email" />
-			  			<p class="help-block"></p>
-		   			</div>
-	         </div> 	
-                <div class="control-group">
-                  <div class="controls">
-					<input type="email" class="form-control" placeholder="Email" 
-			   	       id="email" required data-validation-required-message="Introduzca tu email" />
-				  </div>
-	    		</div> 	
-			  
-               <div class="control-group">
-                 <div class="controls">
-				 	<textarea rows="7" cols="7" class="form-control" 
-                       placeholder="Message" id="message" required
-		       data-validation-required-message="Introduzca el mensaje" minlength="5" 
-                       data-validation-minlength-message="Min 5 caracteres" 
-                        maxlength="999" style="resize:none"></textarea>
-				</div>
-               </div> 		 
-	     <div id="success"> </div> <!-- For success/fail messages -->
-	    	
-          </form>
-                
-                
-                
+
+                <form name="sentMessage" class="well" id="contactForm" novalidate>
+                    <legend>Selecciona imagen</legend>
+                    <select class="image-picker show-html">
+                        <option data-img-src="img/postal1.jpg" value="1"></option>
+                        <option data-img-src="img/postal2.jpg" value="2"></option>
+                        <option data-img-src="img/postal3.jpg" value="3"></option>
+                        <option data-img-src="img/postal4.jpg" value="4"></option>
+                    </select>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Introduzca tu email" />
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Introduzca tu email" />
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <div class="controls">
+                            <textarea rows="7" cols="7" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Introduzca el mensaje" minlength="5" data-validation-minlength-message="Min 5 caracteres" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"> </div>
+                    <!-- For success/fail messages -->
+
+                </form>
+
+
+
                 <p><a href="sendEmail.html" class="btn btn-default btn-lg"> ENVIAR</span></a></p>
             </div>
         </div>
