@@ -49,17 +49,14 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li >
-                        <audio controls>
-							<source src="../web/recursos/audio/Los%20Mismos%20-%20Puente%20a%20Mallorca.mp3" type="audio/mpeg" />
-							<a href="../web/recursos/audio/Los%20Mismos%20-%20Puente%20a%20Mallorca.mp3" type="audio/mpeg">sound1</a>
-						</audio>
-                    </li>
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#introduccion">Introducción</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#videos">Videos</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#sitios">Sitios de interés</a>
@@ -68,12 +65,16 @@
                         <a class="page-scroll" href="#ubicacion">Localización</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#enviarPostal">Enviar postal</a>
+                        <a  href="../web/imagenes.html">Enviar postal</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
+        <audio controls>
+							<source src="../web/recursos/audio/Los%20Mismos%20-%20Puente%20a%20Mallorca.mp3" type="audio/mpeg" />
+							<a href="../web/recursos/audio/Los%20Mismos%20-%20Puente%20a%20Mallorca.mp3" type="audio/mpeg">sound1</a>
+		</audio>
         <!-- /.container -->
     </nav>
 
@@ -94,14 +95,21 @@
         </div>
     </header>
 
-    <!-- About Section -->
+    <!--  Section -->
     <section id="introduccion" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Introducción</h2>
                 <p>Mallorca es una isla que pertenece a las Islas Baleares, situadas en el Mar Mediterráneo. Mallorca es la isla más grande del archipiélago balear, y su idioma oficial es el mallorquín (una variedad del catalán). </p>
                 <p>En esta página os enseñaremos algunos sitios y costumbres que no puedes perderte.</p>
-                <p> VIDEO</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="videos" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <p> VIDEOS</p>
                 <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="//www.youtube.com/embed/PVHQLokT9T0"></iframe>
                 </div>
@@ -112,7 +120,7 @@
         </div>
     </section>
 
-    <!-- Download Section -->
+    <!--  Section -->
     <section id="sitios" class="content-section text-center">
         <div class="download-section">
             <div class="container">
@@ -138,53 +146,7 @@
     </section>
    
    
-   
-    <!-- Contact Section -->
-    <section id="enviarPostal" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Enviar postal</h2>
-                <p>Envía una postal a un amigo o familiar para enseñarles lo bonito que es Mallorca
-                </p>
-
-                <form name="sentMessage" class="well" id="contactForm" novalidate>
-                    <legend>Selecciona imagen</legend>
-                    <select class="image-picker show-html">
-                        <option data-img-src="img/postal1.jpg" value="1"></option>
-                        <option data-img-src="img/postal2.jpg" value="2"></option>
-                        <option data-img-src="img/postal3.jpg" value="3"></option>
-                        <option data-img-src="img/postal4.jpg" value="4"></option>
-                    </select>
-                    <div class="control-group">
-                        <div class="controls">
-                            <input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Introduzca tu email" />
-                            <p class="help-block"></p>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="controls">
-                            <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Introduzca tu email" />
-                        </div>
-                    </div>
-
-                    <div class="control-group">
-                        <div class="controls">
-                            <textarea rows="7" cols="7" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Introduzca el mensaje" minlength="5" data-validation-minlength-message="Min 5 caracteres" maxlength="999" style="resize:none"></textarea>
-                        </div>
-                    </div>
-                    <div id="success"> </div>
-                    <!-- For success/fail messages -->
-
-                </form>
-
-
-
-                <p><a href="sendEmail.html" class="btn btn-default btn-lg"> ENVIAR</span></a></p>
-            </div>
-        </div>
-    </section>
-
-    
+ 
     
 
     <!-- Footer -->
